@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos | Instituto Logos & Psyche</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --primary: #c6a96b;
+      --secondary: #6b2c3e;
+      --text: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.8);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    header h2 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 100px 10%;
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      margin: 30px 0;
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .highlight {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 60px 10%;
+    }
+
+    .card {
+      position: relative;
+      height: 350px;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    .overlay h3 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .overlay p {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Logos & Psyche</h2>
+  <nav>
+    <a href="C:\Users\Computer\OneDrive\Desktop\LP\index1.html">Início</a>
+    <a href="C:\Users\Computer\OneDrive\Desktop\LP\index1.html#institucional">Equipe</a>
+    <a href="https://wa.me/5562981190865" class="btn">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Transforme sua mente. Reprograme sua vida. Viva o próximo nível.</h1>
+
+  <p>Você não chegou até aqui por acaso. Existe algo dentro de você que já percebeu: continuar como está não é mais uma opção.</p>
+
+  <p>O <span class="highlight">Instituto Logos & Psyche</span> não é apenas um lugar de ensino. É um ambiente de transformação profunda — mental, emocional e espiritual.</p>
+
+  <p>Aqui, você não vai receber apenas conteúdo... você vai acessar <strong>chaves que desbloqueiam padrões, rompem ciclos e reposicionam sua identidade</strong>.</p>
+
+  <div class="divider"></div>
+
+  <p>🔥 Formações práticas e aplicáveis desde o primeiro dia</p>
+  <p>🧠 Base psicanalítica sólida + visão espiritual estratégica</p>
+  <p>⚡ Métodos que já estão gerando resultados reais</p>
+
+  <div class="divider"></div>
+
+  <h2>Por que agora?</h2>
+  <p>Quanto mais você adia, mais fortalece aquilo que te trava.</p>
+
+  <h2>Vagas limitadas</h2>
+  <p>Turmas reduzidas. Quando fecha… acabou.</p>
+
+  <h2>Exclusividade real</h2>
+  <p>Conteúdo + direcionamento para transformação prática.</p>
+
+  <h2>Resultado ou ilusão?</h2>
+  <p>Ou você muda… ou nada muda.</p>
+
+  <h2>A decisão é sua</h2>
+  <p>O próximo passo define seu próximo nível.</p>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+    <div class="overlay">
+      <h3>Psicanálise</h3>
+      <p>Formação prática em psicanálise com aplicação clínica e leitura profunda do comportamento.</p>
+      <a href="psicanalise.html" class="btn">Entrar</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+    <div class="overlay">
+      <h3>Formação Completa</h3>
+      <p>Entenda sua mente, organize sua vida e encontre direção com aplicação prática.</p>
+      <a href="formacao-completa.html" class="btn">Entrar</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4">
+    <div class="overlay">
+      <h3>Mentoria</h3>
+      <p>Pare de viver travado: entenda sua mente e alinhe seu espírito com direção prática.</p>
+      <a href="mentoria.html" class="btn">Entrar</a>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

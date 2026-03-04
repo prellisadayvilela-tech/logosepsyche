@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Logos & Psyche</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f8f5f0;
+      --bg-soft: #ede7dc;
+      --primary: #8b6f3d;
+      --secondary: #6b2c3e;
+      --text: #1f2937;
+      --text-light: #6b7280;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(255,255,255,0.9);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      border-bottom: 1px solid #e5e7eb;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo { display: flex; align-items: center; gap: 10px; }
+
+    .logo-symbol {
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .logo-text { font-weight: bold; color: var(--primary); }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 120px 10% 60px;
+      background: linear-gradient(135deg, var(--bg), var(--bg-soft));
+      gap: 40px;
+    }
+
+    .hero-text { max-width: 500px; }
+
+    .hero h2 { font-size: 3rem; margin-bottom: 20px; }
+
+    .hero p { margin-bottom: 30px; color: var(--text-light); }
+
+    .btn {
+      padding: 12px 25px;
+      background: var(--secondary);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-img img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    section { padding: 80px 10%; }
+
+    .founder {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .founder img {
+      width: 250px;
+      border-radius: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--bg-soft);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-symbol">LP</div>
+    <div class="logo-text">Logos & Psyche</div>
+  </div>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#metodo">Método</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Onde a mente encontra o espírito</h2>
+    <p>Psicanálise e fé com profundidade, propósito e transformação real.</p>
+    <a href="#sobre" class="btn">Conheça o Instituto</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="ana.jpg" alt="Ana Paula Monteiro">
+  </div>
+</section>
+
+<section id="sobre">
+  <h2>Fundadora</h2>
+
+  <div class="founder">
+    <img src="ana.jpg" alt="Ana Paula Monteiro">
+    <div>
+      <h3>Psicanalista e Pastora Ana Paula Monteiro</h3>
+      <p>Uma voz que une profundidade emocional e direção espiritual. Sua missão é restaurar vidas através da integração entre mente e espírito.</p>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <h2>Método</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Psicanálise</h3>
+      <p>Leitura profunda da mente.</p>
+    </div>
+    <div class="card">
+      <h3>Espiritualidade</h3>
+      <p>Base bíblica aplicada.</p>
+    </div>
+    <div class="card">
+      <h3>Transformação</h3>
+      <p>Cura e reconstrução.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Instituto Logos & Psyche</p>
+</footer>
+
+</body>
+</html>
