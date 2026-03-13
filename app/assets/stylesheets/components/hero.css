@@ -1,0 +1,9 @@
+.hero {
+  padding: 100px 10%;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}

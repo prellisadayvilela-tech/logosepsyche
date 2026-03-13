@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Logos & Psyche</title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+  <style>
+    :root {
+      --bg: #f8f5f0;
+      --bg-soft: #ede7dc;
+      --primary: #8b6f3d;
+      --secondary: #6b2c3e;
+      --text: #1f2937;
+      --text-light: #6b7280;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3 { font-family:Playfair Display, serif; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(255,255,255,0.9);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      border-bottom: 1px solid #e5e7eb;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo { display: flex; align-items: center; gap: 14px; }
+
+    .logo-symbol { width: 56px; height: 56px; }
+
+    .logo-text {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 120px 10% 60px;
+      background: linear-gradient(135deg, var(--bg), var(--bg-soft));
+      gap: 40px;
+    }
+
+    .hero-text { max-width: 500px; }
+
+    .hero h2 { font-Playfair Display: 3rem; margin-bottom: 20px; }
+
+    .hero p { margin-bottom: 30px; color: var(--text-light); }
+
+    .btn {
+      padding: 12px 25px;
+      background: var(--secondary);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .hero-img img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    section { padding: 80px 10%; }
+
+    .founders {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .founder-card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .founder-card:hover { transform: translateY(-5px); }
+
+    .founder-card img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 16px;
+      margin-bottom: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      min-height: 260px;
+      transition: 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card .btn { margin-top: auto; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--bg-soft);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+
+    <svg class="logo-symbol" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#8b6f3d"/>
+          <stop offset="100%" stop-color="#6b2c3e"/>
+        </linearGradient>
+      </defs>
+
+      <circle cx="50" cy="50" r="45" fill="url(#grad)" />
+      <path d="M35 50 C30 40, 40 30, 50 40 C60 30, 70 40, 65 50 C70 60, 60 70, 50 60 C40 70, 30 60, 35 50" fill="none" stroke="white" stroke-width="2"/>
+      <line x1="50" y1="30" x2="50" y2="70" stroke="white" stroke-width="3"/>
+      <line x1="35" y1="50" x2="65" y2="50" stroke="white" stroke-width="3"/>
+    </svg>
+
+    <div class="logo-text">Logos & Psyche<br><small style="font-Playfair Display:400; font-size:12px; color:#6b7280">Instituto</small></div>
+  </div>
+
+  <nav>
+  <ul>
+    <li><a href="index.html">Início</a>
+      <a href="#institucional">Sobre</a>
+      <a href="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\cursos.html"">Cursos</a>
+      <a href="#blog">Blog</a>
+      <a href="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\index.html#professores">Equipe</a>
+      <a href="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\cursos.html"">Agende sua Terapia</a>
+      <a href="https://wa.me/5562981190865">Contato</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Onde a mente encontra o espírito</h2>
+    <p>Você não precisa escolher entre fé e mente. Aqui você aprende a dominar as duas.</p>
+    <a href="#institucional" class="btn">Conheça o Instituto</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\assets\imges\ana-paula.jpeg">
+  </div>
+</section>
+
+<section id="institucional">
+
+  <p style="max-width:800px; margin-top:20px; color:var(--text-light);">
+   <h2><br>Instituto Logos e Psyché</p></h2>
+<p>Formação que integra conhecimento, consciência e propósito </p>
+
+<br> O Instituto Logos e Psyché nasce da convicção de que compreender o ser humano exige mais do que 
+informação: exige profundidade, responsabilidade e visão integral.</p>
+
+<br> Unindo ciência, reflexão crítica e fundamentos da fé, o Instituto promove formação sólida na área 
+do comportamento humano, preparando pessoas e profissionais para pensar com clareza, agir com ética 
+e servir à sociedade com consciência Inspirado no significado de seu próprio nome, o ILP integra
+ Logos — razão, conhecimento e palavra estruturada — e Psyché — alma, subjetividade e experiência 
+ humana, formando um espaço de aprendizado que valoriza tanto o rigor intelectual quanto a sensibilidade 
+ humana.</p>
+
+<br>Com eixo formativo em Psicanálise Clínica e estudos teológicos fundamentais, o Instituto também 
+desenvolve cursos e programas voltados ao desenvolvimento pessoal, à comunicação e à compreensão 
+das dinâmicas humanas.
+
+Aqui, o conhecimento não é apenas transmitido — ele é formado, aprofundado e aplicado à vida real.
+  </p>
+</section>
+
+<section id="sobre">
+  <h2>Fundadoras</h2>
+  <div class="founders">
+
+    <div class="founder-card">
+      <img src="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\assets\imges\ana-paula.jpeg">
+      <h3>Pr. Ana Paula Monteiro</h3>
+      <p>Psicologa, Dra. em Psicanálise Clínica, Pastora, Especialista em Sexologia Clínica, Neurociência e Comportamento.</p>
+    </div>
+
+    <div class="founder-card">
+      <img src="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\assets\imges\ana-paula.jpeg">
+      <h3>Soraide Silva</h3>
+      <p>Psicanalista clínica com abordagem profunda no inconsciente e comportamento humano.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="professores">
+  <h2>Equipe de Professores</h2>
+  <div class="founders">
+
+    <div class="founder-card">
+      <img src="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\assets\imges/ana-paula.jpeg">
+      <h3>Prof. João Silva</h3>
+      <p>Psicanálise clínica e interpretação do inconsciente.</p>
+    </div>
+
+    <div class="founder-card">
+      <img src="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\assets\imges/ana-paula.jpeg">
+      <h3>Profa. Maria Costa</h3>
+      <p>Teologia aplicada à saúde emocional.</p>
+    </div>
+
+    <div class="founder-card">
+      <img src="C:\Users\Computer\OneDrive\Desktop\instituto logos e psyche\public\assets\imges/ana-paula.jpeg">
+      <h3>Prof. Lucas Andrade</h3>
+      <p>Desenvolvimento pessoal e construção de identidade.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="blog" style="background: var(--bg-soft);">
+  <h2>Conteúdos Provocadores</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Você não está cansado. Está desorganizado emocionalmente.</h3>
+      <p>O problema não é falta de força. É excesso de conflito interno.</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+
+    <div class="card">
+      <h3>Você ora, mas não muda</h3>
+      <p>Espiritualidade sem consciência emocional vira fuga, não transformação.</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+
+    <div class="card">
+      <h3>Seu passado ainda manda em você</h3>
+      <p>Enquanto não for tratado, ele continuará decidindo seu futuro.</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="cursos" style="background: var(--bg-soft);">
+  <h2>Formações</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Formação em Psicanálise</h3>
+      <p>Base teórica + prática clínica</p>
+      <p><strong>R$ 497</strong></p>
+      <a href="C:\Users\Computer\OneDrive\Desktop\LP\psicanalise.html" class="btn">Entrar agora</a>
+    </div>
+
+    <div class="card" style="border:2px solid var(--primary); transform: scale(1.05);">
+      <h3>Formação Completa</h3>
+      <p>Psicanálise + Espiritualidade + Mentoria</p>
+      <p><strong>R$ 997</strong></p>
+      <a href="C:\Users\Computer\OneDrive\Desktop\LP\formacao-completa.html" class="btn">Quero essa formação</a>
+    </div>
+
+    <div class="card">
+      <h3>Mentoria Individual</h3>
+      <p>Acompanhamento direto e personalizado</p>
+      <p><strong>R$ 297</strong></p>
+      <a href="C:\Users\Computer\OneDrive\Desktop\LP\mentoria.html" class="btn">Agendar</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Instituto Logos & Psyche</p>
+</footer>
+
+</body>
+</html>

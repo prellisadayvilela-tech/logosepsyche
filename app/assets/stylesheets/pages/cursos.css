@@ -1,0 +1,10 @@
+.highlight {
+  color: #c6a96b;
+  font-weight: 600;
+}
+
+.divider {
+  margin: 30px 0;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}

@@ -1,0 +1,13 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+@import "layout/header.css";
+@import "layout/footer.css";
+
+@import "components/hero.css";
+@import "components/cards.css";
+@import "components/buttons.css";
+
+@import "pages/cursos.css";
